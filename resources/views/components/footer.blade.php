@@ -83,8 +83,8 @@
     </div>
     <div class="bg-gray-900">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-white text-sm text-center sm:text-left">© 2020 Dev —
-        <a href="#" rel="noopener noreferrer" class="text-gray-400 ml-1" target="_blank">@Developer</a>
+        <p class="text-white text-sm text-center sm:text-left">© 2021-<script>document.write(new Date().getFullYear())</script> Dev —
+        <a href="https://coderfoxbd.pythonanywhere.com" rel="noopener noreferrer" class="text-gray-400 ml-1" target="_blank">@Developer</a>
         </p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a class="text-gray-200">
