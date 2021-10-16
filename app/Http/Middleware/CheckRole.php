@@ -19,7 +19,7 @@ class CheckRole
         $role = auth()->user()->roles()->first();
 
         if ($role->name !== 'admin') {
-            abort(code: 403);
+            abort(403);
         }
 
         return $next($request);
