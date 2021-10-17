@@ -21,7 +21,7 @@
                   <img src="https://picsum.photos/id/342/2106/1404" alt=""class="overflow-hidden">
                   <!-- Card Content -->
                   <div class="p-4">
-                    <h3 class="font-medium text-gray-600 text-lg my-2 uppercase truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi illo quisquam eaque ex nostrum totam debitis accusamus iure ullam, alias eos sed consequuntur. Soluta dolorum natus ipsum iste esse.</h3>
+                    <h3 class="font-medium text-gray-600 text-lg my-2 uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id commodi illo quisquam eaque ex nostrum totam debitis accusamus iure ullam, alias eos sed consequuntur. Soluta dolorum natus ipsum iste esse.</h3>
                     <div class="flex items-center">
                       {{-- <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" /> --}}
                       <span class="text-xs ml-2">by Test User</span>
