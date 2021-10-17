@@ -17,14 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
-
-Route::group(['middleware' => 'auth'],function () {
-    Route::group(['middleware' => 'role'],function () {
-        Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-            return view('dashboard');
-        })->name('dashboard');
+Route::group(['auth:sanctum', 'verified'],function () {
+    Route::group(['middleware' => 'role', 'prefix' => 'admin', 'as' => 'admin.'],function () {
+        Route::view('/dashboard', 'dashboard')->name('dashboard');
     });
 });

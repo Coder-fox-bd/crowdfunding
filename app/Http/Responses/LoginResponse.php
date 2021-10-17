@@ -17,7 +17,7 @@ class LoginResponse implements LoginResponseContract
 
         switch ($role->name) {
             case 'admin':
-                $home = '/dashboard';
+                $home = '/admin/dashboard';
                 break;
             case 'user' :
                 $home = '/';

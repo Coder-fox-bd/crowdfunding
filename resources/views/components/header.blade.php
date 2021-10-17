@@ -87,7 +87,20 @@
         <div class="flex ">
         @if (Route::has('login'))
             @auth
-                <a href="{{ url('/dashboard') }}" class="block border-double border-4 border-light-blue-500 text-md px-4 py-2 rounded text-white ml-2 font-bold hover:text-gray-400 mt-4 lg:mt-0">Dashboard</a>
+              @if(auth()->user()->roles()->first()->name == 'admin')
+              <a href="{{ route('admin.dashboard') }}" class="block border-double border-4 border-light-blue-500 text-md px-4 py-2 rounded text-white ml-2 font-bold hover:text-gray-400 mt-4 lg:mt-0">Dashboard</a>
+              @else
+              <!-- Authentication -->
+              <form method="POST" action="{{ route('logout') }}">
+                @csrf
+
+                <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    this.closest('form').submit();" class="block border-double border-4 border-light-blue-500 text-md px-4 py-2 rounded text-white ml-2 font-bold hover:text-gray-400 mt-4 lg:mt-0">
+                    {{ __('LogOut') }}
+                </a>
+              </form>
+              @endif
             @else
                 @if (Route::has('register'))
                     <a href="{{ route('register') }}" class="block border-double border-4 border-light-blue-500 text-md px-4 py-2 rounded text-white ml-2 font-bold hover:text-gray-400 mt-4 lg:mt-0">Start a Fundriser</a>
