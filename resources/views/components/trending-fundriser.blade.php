@@ -15,7 +15,7 @@
           </div>
           <div class="grid grid-cols-1 grid-rows-1" x-data="carousel()" x-init="init()">  
             <div class="carousel col-start-1 row-start-1 z-20" x-ref="carousel">
-              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 mx-8">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
                 </a>
@@ -29,7 +29,7 @@
                     </a>
                 </div>
               </div>
-              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 mx-8">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
                 </a>
@@ -43,7 +43,7 @@
                     </a>
                 </div>
               </div>
-              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 mx-8">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
                 </a>
@@ -57,7 +57,7 @@
                     </a>
                 </div>
               </div>
-              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 mx-8">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
                 </a>
@@ -71,7 +71,7 @@
                     </a>
                 </div>
               </div>
-              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 mx-8">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
                 </a>
@@ -85,7 +85,7 @@
                     </a>
                 </div>
               </div>
-              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+              <div class="w-80 bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5 mx-8">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
                 </a>
