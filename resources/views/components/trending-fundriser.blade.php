@@ -15,7 +15,7 @@
           </div>
           <div class="grid grid-cols-1 grid-rows-1" x-data="carousel()" x-init="init()">  
             <div class="carousel col-start-1 row-start-1 z-20" x-ref="carousel">
-              <div class="w-80 h-auto lg:m-4 shadow-md hover:shadow-lg hover:bg-gray-100 rounded-xl overflow-hidden bg-white my-12 mx-8">
+              <div class="w-80 lg:m-4 shadow-md hover:shadow-lg hover:bg-gray-100 rounded-xl bg-white my-12 mx-8">
                 <a href="#link">
                   <!-- Card Image -->
                   <img src="https://picsum.photos/id/342/2106/1404" alt="">
