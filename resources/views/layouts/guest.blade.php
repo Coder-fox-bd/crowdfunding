@@ -19,7 +19,7 @@
         <style>
         .carousel {
             width: 100%;
-            height: auto;
+            height: 500px;
         }
         </style>
         <x-header />
