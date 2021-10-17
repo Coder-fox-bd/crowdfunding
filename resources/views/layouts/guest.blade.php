@@ -16,6 +16,12 @@
         <link rel="stylesheet" href="{{ mix('css/custom.css') }}">
     </head>
     <body>
+        <style>
+        .carousel {
+            width: 100%;
+            height: auto;
+        }
+        </style>
         <x-header />
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
