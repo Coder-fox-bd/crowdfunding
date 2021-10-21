@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="{{ mix('css/flickity.min.css') }}">
         <link rel="stylesheet" href="{{ mix('css/custom.css') }}">
+        @yield('css')
     </head>
     <body>
         <x-header />
