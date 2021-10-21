@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Setting;
 use Illuminate\Database\Seeder;
 
 class SettingsTableSeeder extends Seeder
 {
-    /**
+   /**
      * @var array
      */
     protected $settings = [
@@ -17,10 +18,6 @@ class SettingsTableSeeder extends Seeder
         [
             'key'                       =>  'site_title',
             'value'                     =>  'Crowdfunding',
-        ],
-        [
-            'key'                       =>  'welcome_message_title',
-            'value'                     =>  '',
         ],
         [
             'key'                       =>  'default_email_address',
@@ -56,6 +53,18 @@ class SettingsTableSeeder extends Seeder
         ],
         [
             'key'                       =>  'welcome_image',
+            'value'                     =>  '',
+        ],
+        [
+            'key'                       =>  'featured_image',
+            'value'                     =>  '',
+        ],
+        [
+            'key'                       =>  'featured_title',
+            'value'                     =>  '',
+        ],
+        [
+            'key'                       =>  'featured_description',
             'value'                     =>  '',
         ],
         [

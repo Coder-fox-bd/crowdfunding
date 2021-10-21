@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
     // mode: 'jit',
-    darkMode: 'media',
+    darkMode: 'class',
     purge: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './vendor/laravel/jetstream/**/*.blade.php',
@@ -18,5 +18,5 @@ module.exports = {
         },
     },
 
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')],
 };

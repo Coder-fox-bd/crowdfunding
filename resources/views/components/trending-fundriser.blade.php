@@ -21,7 +21,7 @@
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2">Noteworthy technology acquisitions 2021</h5>
+                        <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 line-clamp-2">Noteworthy technology acquisitions 2021 Noteworthy technology acquisitions 2021</h5>
                     </a>
                     <div class="flex items-center">
                       {{-- <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" /> --}}

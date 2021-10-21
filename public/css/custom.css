@@ -31,20 +31,19 @@
     right: 25px;
     font-size: 36px;
 }
-  
+
 [x-cloak] { display: none; }
-  
 .dropdown:focus-within .dropdown-menu {
     opacity:1;
     transform: translate(0) scale(1);
     visibility: visible;
 }
-  
+
 .flickity-button {
     background: #373593;
     color: white;
 }
-  
+
 .flickity-button:hover {
     background: #2e2d7e;
 }
