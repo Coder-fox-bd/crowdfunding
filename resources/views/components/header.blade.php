@@ -4,7 +4,7 @@
         <div class="flex items-center flex-shrink-0 text-gray-800 mr-16">
             {{-- <span class="font-semibold text-xl tracking-tight">My Navbar</span> --}}
             <a href="/">
-              <img class="text-1xl font-bold uppercase text-purple-100" src="{{ asset('storage/images/3.png') }}" width="120" height="10" />
+              <img class="text-1xl font-bold uppercase text-purple-100" src="{{ asset('storage/'.config('settings.site_logo')) }}" width="120" height="10" />
             </a>
         </div>
         <div class="block lg:hidden mt-2">
