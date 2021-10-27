@@ -41,5 +41,7 @@ Route::group(['middleware' => 'auth'],function () {
         Route::get('/fundrising', [Fundrising::class, 'index'])->name('fundrising.index');
         Route::get('/fundrising/create', [Fundrising::class, 'create'])->name('fundrising.create');
         Route::get('/fundrising/{id}', [Fundrising::class, 'destroy'])->name('fundrising.destroy');
+        Route::get('/fundrising/{id}/edit', [Fundrising::class, 'edit'])->name('fundrising.edit');
+        Route::post('/fundrising/{id}/update', [Fundrising::class, 'update'])->name('fundrising.update');
     });
 });

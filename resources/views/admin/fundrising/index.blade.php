@@ -21,7 +21,7 @@
                             {{ $title }}
                         </td>
                         <td class="px-4 py-3 text-xs">
-                            <a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 border border-green-500 rounded">Edit</a>
+                            <a href="{{ route('admin.fundrising.edit', $id) }}" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 border border-green-500 rounded">Edit</a>
                             <a href="{{ route('admin.fundrising.destroy', $id)}}" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 border border-red-500 rounded">Delete</a>
                         </td>
                         </tr>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-9 dark:text-gray-400 dark:bg-gray-800">
                 <!-- Pagination -->
-                {{-- {{ $users->links() }} --}}
+                {{-- {{ $fundrisings->links() }} --}}
                 </div>
             </div>
         </div>

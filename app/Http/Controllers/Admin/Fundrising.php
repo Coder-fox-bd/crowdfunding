@@ -31,17 +31,6 @@ class Fundrising extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
@@ -49,7 +38,10 @@ class Fundrising extends Controller
      */
     public function edit($id)
     {
-        //
+        $fundrising = Fund::findOrFail($id);
+        return view('admin.fundrising.edit',[
+            'fundrising' => $fundrising,
+        ]);
     }
 
     /**
@@ -61,7 +53,16 @@ class Fundrising extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $fundrising = Fund::findOrFail($id);
+
+        $fundrising->update($request->all());
+
+        if ($request->hasFile('photo')) {
+            $fundrising->clearMediaCollection('images');
+            $fundrising->addMediaFromRequest('photo')->toMediaCollection('images');
+        }
+
+        return redirect()->route('admin.fundrising.index')->with('success', 'Settings updated successfully.');
     }
 
     /**
