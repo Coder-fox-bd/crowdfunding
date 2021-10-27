@@ -70,9 +70,9 @@ class Fundrising extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Fundrising $fundrising)
+    public function destroy($id)
     {
-        dd('this is something');
+        $fundrising = Fund::findOrFail($id);
         $fundrising->delete();
         return back();
     }
