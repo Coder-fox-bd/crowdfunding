@@ -3,6 +3,7 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use App\Models\Fundrising;
 
 class TrendingFundriser extends Component
 {
@@ -23,6 +24,9 @@ class TrendingFundriser extends Component
      */
     public function render()
     {
-        return view('components.trending-fundriser');
+        $fundrisings = Fundrising::with('media', 'user')->limit(10)->get();
+        return view('components.trending-fundriser',[
+            'fundrisings' => $fundrisings,
+        ]);
     }
 }
