@@ -72,6 +72,7 @@ class Fundrising extends Controller
      */
     public function destroy(Fundrising $fundrising)
     {
+        dd('this is something');
         $fundrising->delete();
         return back();
     }
