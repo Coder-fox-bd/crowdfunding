@@ -59,4 +59,5 @@
     </script>
     <script src="{{ mix('js/jquery.js') }}"></script>
     <script src="{{ mix('js/custom.js') }}"></script>
+    @stack('scripts')
 </html>

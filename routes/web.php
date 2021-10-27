@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\AboutUs;
 use App\Http\Controllers\Admin\CkeditorImageController;
+use App\Http\Controllers\Admin\Fundrising;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ use App\Http\Controllers\Admin\CkeditorImageController;
 
 
 Route::view('/', 'home');
-Route::view('/about-us', 'about-us')->name('about.us');
+Route::view('/about', 'about-us')->name('about');
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //     return view('dashboard');
@@ -27,10 +28,18 @@ Route::view('/about-us', 'about-us')->name('about.us');
 Route::group(['middleware' => 'auth'],function () {
     Route::group(['middleware' => 'role', 'prefix' => 'admin', 'as' => 'admin.'],function () {
         Route::view('/dashboard', 'dashboard')->name('dashboard');
-        Route::resource('/settings', SettingController::class);
+        Route::resource('/settings', SettingController::class)->except([
+            'create', 'show', 'edit', 'update', 'destroy'
+        ]);
         Route::view('/add-user', 'admin.add-user')->name('add.user');
         Route::get('/about-us', [AboutUs::class, 'index'])->name('about.us');
         Route::post('/about-us', [AboutUs::class, 'update'])->name('about.us.update');
         Route::post('/ckeditor-img', [CkeditorImageController::class, 'store'])->name('ckeditor.img.upload');
+        // Route::resource('/fundrising', FundrisingController::class)->except([
+        //     'store'
+        // ]);
+        Route::get('/fundrising', [Fundrising::class, 'index'])->name('fundrising.index');
+        Route::get('/fundrising/create', [Fundrising::class, 'create'])->name('fundrising.create');
+        Route::get('/fundrising/{id}', [Fundrising::class, 'destroy'])->name('fundrising.destroy');
     });
 });

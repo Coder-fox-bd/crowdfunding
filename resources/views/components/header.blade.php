@@ -63,7 +63,7 @@
                   </div>
                 </div>
             </div>
-            <a href="{{ route('about.us') }}"
+            <a href="{{ route('about') }}"
                 class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 px-4 py-2 rounded mr-2">
                 About Us
             </a>
@@ -162,7 +162,7 @@
           </div>
       </div>
       <div class="flex flex-row mt-4 lg:inline-block lg:mt-0 px-4 py-2 rounded mr-2 font-bold">
-        <a class="pl-4 text-gray-800 text-xl">About Us</a>
+        <a href="{{ route('about') }}" class="pl-4 text-gray-800 text-xl">About Us</a>
       </div>
       <div class="text-center">
         @if (Route::has('login'))
